@@ -89,4 +89,3 @@ webencodings==0.5.1
 yapf==0.40.2
 yfinance
 ta-lib-bin
-TA-Lib
