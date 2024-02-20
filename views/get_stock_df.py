@@ -53,7 +53,7 @@ def update_and_save_korea_df():
     korea_df = fdr.StockListing('KOSPI')
     korea_df = korea_df.head(20)
     korea_df['Code'] = korea_df['Code'].apply(lambda x: x + '.KS')
-    korea_df['ChagesRatio'] = korea_df['ChagesRatio']/1e8
+    korea_df['ChagesRatio'] = korea_df['ChagesRatio']
 
     korea_df.to_csv('stock_df/korea_stocks.csv', index=False)
     print("korea_df updated")
