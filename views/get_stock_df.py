@@ -4,7 +4,6 @@ import schedule
 import time
 import pandas as pd
 from datetime import datetime
-from pykrx import stock
 
 def update_and_save_usa_df():
     # Your existing code to update usa_df
