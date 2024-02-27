@@ -248,7 +248,7 @@ def app():
     y_test = torch.from_numpy(y_test).type(torch.Tensor)
     
     model = LSTM()
-    model_state_dict = torch.load('../streamlit/views/models/lstm/lstm.pth')
+    model_state_dict = torch.load('views/models/lstm/lstm.pth')
     model.load_state_dict(model_state_dict)
     
     # make predictions
