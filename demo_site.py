@@ -27,3 +27,7 @@ elif selected == "Candle Matching":
     candle_matching.app()
 elif selected == "About Us":
     about_us.app()
+
+if name == "__main":
+    with streamlit_analytics.track(save_to_json='tracked.json'):
+        app()
